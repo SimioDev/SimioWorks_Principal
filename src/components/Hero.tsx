@@ -4,7 +4,7 @@ import { SITE_TITLE } from '../consts';
 
 const Hero: React.FC = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="text-white font-bold text-5xl md:text-7xl text-balance text-center max-w-[30ch] mx-auto md:leading-[1.16]"
       >
-        Gestiona tus tareas de manera eficaz con <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">{SITE_TITLE}</span>
+        Gestiona tus tareas de manera eficaz con <span className="bg-gradient-to-r from-blue-300 to-green-300 inline-block text-transparent bg-clip-text">{SITE_TITLE}</span>
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -26,7 +26,8 @@ const Hero: React.FC = () => {
       >
         Haz que las tareas diarias sean más sencillas y eficaces con nosotros.
       </motion.p>
-    </motion.div>
+      <img src="/figma_basics.png" alt="Main image of the section" className="mt-10 mx-auto w-[80rem] border border-transparent rounded-xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 p-1"/>    
+    </motion.section>
   );
 };
 

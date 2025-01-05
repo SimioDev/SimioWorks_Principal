@@ -1,0 +1,9 @@
+services:
+  main_website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:4321"
+    container_name: website_container
+
