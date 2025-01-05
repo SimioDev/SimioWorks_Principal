@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero';
+import AboutProduct from '../components/AboutProduct.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -15,16 +16,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<div class="fixed inset-0 -z-10 bg-slate-900">
 			<div class="absolute inset-0 bg-grid-white/[0.05] bg-[size:50px_50px]" />
 			<div class="absolute inset-0">
-				
-			  <div class="-z-10 w-48 blur-[200px] top-6 h-40 rounded-full bg-blue-600 absolute pointer-events-none select-none md:top-32 left-0"></div>
+			  <div class="-z-10 w-80 blur-[200px] top-6 h-80 rounded-full bg-blue-600 absolute pointer-events-none select-none md:top-32 left-0"></div>
 			  <div class="-z-10 w-60 blur-[200px] h-60 rounded-full bg-blue-600 absolute pointer-events-none select-none top-80 md:top-56 right-0"></div>
-			  <div class="-z-10 w-80 blur-[200px] top-2/3 h-44 rounded-full bg-blue-600 absolute pointer-events-none select-none bottom-6 md:bottom-32 right-2/4"></div>
+			  <div class="-z-10 w-80 blur-[200px] top-2/3 h-96 rounded-full bg-blue-600 absolute pointer-events-none select-none bottom-6 md:bottom-32 right-2/4"></div>
 			</div>
 		  </div>		  
 		<Header />
 		<main>
 			<Hero client:load />
+			<AboutProduct />
 		</main>
-		<!-- <Footer /> -->
+		<Footer />
 	</body>
 </html>
