@@ -1,14 +1,38 @@
 ---
+import { title } from 'framer-motion/client';
 import { SITE_TITLE } from '../consts';
+const features = [
+    {
+        title: 'Tableros Personalizables',
+        description: 'Organiza tus proyectos con tableros dinámicos que se adaptan a cualquier flujo de trabajo, permitiendo priorizar tareas de forma visual y eficiente.'
+    },
+    {
+        title: 'Colaboración en Tiempo Real',
+        description: 'Facilita la comunicación del equipo con actualizaciones instantáneas, menciones y comentarios directamente en las tareas.'
+    },
+    {
+        title: 'Reportes y Analíticas',
+        description: 'Obtén informes detallados y métricas clave para monitorear el progreso del proyecto y tomar decisiones basadas en datos.'
+    }
+]
 ---
 
 <section class="mt10 md:mt-20 mx-auto w-full max-w-screen-xl space-y-8 px-5 md:px-0">
     <div class="space-y-1">
         <p class="mb-5"><span class="bg-clip-text text-transparent font-semibold bg-gradient-to-r from-blue-300 to-green-300">¿Qué es {SITE_TITLE}?</span>        </p>
         <h2 class="text-xl md:text-3xl text-white"><span class="font-bold">{SITE_TITLE}</span> es una plataforma ágil para gestionar proyectos y tareas, diseñada para maximizar la colaboración y la eficiencia.</h2>
+        <div class="md:flex md:flex-row md:py-8 py-5 justify-center md:space-x-11">
+                    {features.map((feature) => 
+                        (
+                        <div class="flex flex-col md:w-80 mt-5 md:mt-0">
+                            <div class="rounded-full border border-transparent bg-gradient-to-r from-blue-300 to-green-300 w-14 h-14 p-1 mb-3 mx-auto md:mx-0">
+                                <img src="/favicon.svg" alt="" class="rounded-full mb-5 bg-gray-900 opacity-30" />
+                            </div>
+                            <p class="font-bold text-center md:text-left">{feature.title}</p>
+                            <p class="mt-3 text-center md:text-left">{feature.description}</p>
+                        </div>
+                        )
+                    )}
+        </div>
     </div>
 </section>
-
-<style>
-    
-</style>
