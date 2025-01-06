@@ -26,7 +26,15 @@ const Hero: React.FC = () => {
       >
         Haz que las tareas diarias sean más sencillas y eficaces con nosotros.
       </motion.p>
-      <img src="/figma_basics.png" alt="Main image of the section" className="mt-10 mx-auto w-[80rem] border border-transparent rounded-xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 p-1"/>    
+      <a href="">
+        <div className="flex items-center justify-center w-full mt-10">
+          <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
+            <div className="inline-flex items-center justify-center w-full px-4 py-2 md:text-lg rounded-full cursor-pointer bg-gray-800 text-white/80 backdrop-blur-3xl whitespace-nowrap"> Empieza Ahora! </div>
+          </span>
+        </div>
+      </a>
+      <img src="/figma_basics.png" alt="Main image of the section" className="mt-10 mx-auto w-[80rem] border border-transparent rounded-xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 p-1" />
     </motion.section>
   );
 };
